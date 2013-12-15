@@ -39,6 +39,16 @@ _Milestone: v1.0.0_
 ### Associations Steps
 _Milestone: undefined_
 
+### JSON API Steps
+_Milestone: undefined_
+
+**Note**: I'm not sure yet that these will be a distinct set of steps, or if all steps will be JSON-API-compliant, however, I think it could be a good thing to keep both concerns separated so you can first build your API and then ensure it complies with the [JSON API][json-api] standard. That would help to migrate existing API to implement the standard.
+
+This steps allow you to ensure the API follows the [JSON API][json-api] standard, which makes it compatible out-of-the-box with clients that follow this standard ([Ember.js][ember] with a `DS.ActiveModelAdapter` from [Ember Data][ember-getting-started] for example).
+
+  [ember]: http://emberjs.com
+  [ember-getting-started]: http://emberjs.com/guides/getting-started/
+
 Generators
 ----------
 _Milestone: undefined_
