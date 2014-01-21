@@ -21,3 +21,24 @@ load 'rails/tasks/engine.rake'
 
 Bundler::GemHelper.install_tasks
 
+begin
+  require 'cucumber'
+  require 'cucumber/rake/task'
+
+  Cucumber::Rake::Task.new(:features) do |t|
+    t.cucumber_opts = "--format pretty"
+  end
+
+  Cucumber::Rake::Task.new(:features_html) do |t|
+    t.cucumber_opts = "--format html --out doc/features.html"
+  end
+
+rescue LoadError
+  desc 'Cucumber rake task not available'
+  task :features do
+    abort 'Cucumber rake task is not available. Be sure to install cucumber as a gem or plugin'
+  end
+end
+
+
+task default: :features
