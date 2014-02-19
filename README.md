@@ -56,6 +56,26 @@ Generators
 ----------
 _Milestone: undefined_
 
+Documentation
+-------------
+
+### Executable documentation
+
+The Cucumber scenarii describe how to setup demonstration applications for different use cases. While you can read the `rake` output, you may prefer to read it in HTML format:
+
+```bash
+cd cucumber_json_api_steps
+rake features_html # generate the features documentation
+
+# Open doc/features.html in your preferred web browser.
+```
+
+### Changelog
+
+Releases are commented to provide a brief [changelog][changelog].
+
+  [changelog]: https://github.com/gonzalo-bulnes/cucumber_json_api_steps/releases
+
 Credits
 -------
 
