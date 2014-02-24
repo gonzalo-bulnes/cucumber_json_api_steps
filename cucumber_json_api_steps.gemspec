@@ -17,5 +17,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency "cucumber-rails", "~> 1.4.0"
 
+  s.add_development_dependency "aruba"
+  s.add_development_dependency "cucumber-rails"
+  s.add_development_dependency "database_cleaner"
+  s.add_development_dependency "factory_girl_rails"
   s.add_development_dependency "sqlite3"
 end
