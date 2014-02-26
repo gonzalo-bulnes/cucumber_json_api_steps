@@ -1,6 +1,9 @@
 Cucumber JSON API Steps
 =======================
 
+[![Build Status](https://travis-ci.org/gonzalo-bulnes/cucumber_json_api_steps.png?branch=v1.2.0)](https://travis-ci.org/gonzalo-bulnes/cucumber_json_api_steps)
+[![Code Climate](https://codeclimate.com/github/gonzalo-bulnes/cucumber_json_api_steps.png)](https://codeclimate.com/github/gonzalo-bulnes/cucumber_json_api_steps)
+
 Some [Cucumber][cucumber] steps to make easier to build [JSON API][json-api] with Rails.
 
   [cucumber]: https://github.com/cucumber/cucumber
@@ -21,11 +24,11 @@ end
 Usage
 -----
 
-**Note**: This usage section acts as a roadmap for development following the [README-drive development][rdd] principles. Not everything that is described here will be available at any moment, however, I'll try to keep things clear in comments.
+**Note**: This usage section acts as a roadmap for development following the [README-driven development][rdd] principles. Not everything that is described here will be available at any moment, however, I'll try to keep things clear in comments.
 
   [rdd]: http://tom.preston-werner.com/2010/08/23/readme-driven-development.html
 
-Once installed, you can include the JSON API [steps](#steps) in your features definitions or use the [build-in generators](#generators) to create common features.
+Once installed, you can include the JSON API [steps](#steps) in your features definitions or use the [built-in generators](#generators) to create common features.
 
 Steps
 -----
@@ -42,9 +45,9 @@ _Milestone: undefined_
 ### JSON API Steps
 _Milestone: undefined_
 
-**Note**: I'm not sure yet that these will be a distinct set of steps, or if all steps will be JSON-API-compliant, however, I think it could be a good thing to keep both concerns separated so you can first build your API and then ensure it complies with the [JSON API][json-api] standard. That would help to migrate existing API to implement the standard.
+**Note**: I'm not sure yet that these will be a distinct set of steps, or if all steps will be JSON-API-compliant, however, I think it could be a good thing to keep both concerns separated so you can first build your API and then ensure it complies with the [JSON API][json-api] standard. That would help to refactor existing API to implement the standard.
 
-This steps allow you to ensure the API follows the [JSON API][json-api] standard, which makes it compatible out-of-the-box with clients that follow this standard ([Ember.js][ember] with a `DS.ActiveModelAdapter` from [Ember Data][ember-getting-started] for example).
+These steps allow you to ensure the API follows the [JSON API][json-api] standard, which makes it compatible out-of-the-box with clients that follow this standard ([Ember.js][ember] with a `DS.ActiveModelAdapter` from [Ember Data][ember-getting-started] for example).
 
   [ember]: http://emberjs.com
   [ember-getting-started]: http://emberjs.com/guides/getting-started/
@@ -56,7 +59,7 @@ _Milestone: undefined_
 Credits
 -------
 
-This gem wouldn't exist without the [Anthony Eden][aeden] [API steps][aeden-steps] and [inspiring talk](http://vimeo.com/30586709).
+This gem wouldn't exist without the [Anthony Eden][aeden] [API steps][aeden-steps] and [inspiring talk](http://vimeo.com/30586709). Thanks!
 
   [aeden]: https://github.com/aeden
   [aeden-steps]: https://gist.github.com/aeden/660331
