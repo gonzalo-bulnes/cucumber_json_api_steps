@@ -1,0 +1,13 @@
+.bundle/
+log/*.log
+pkg/
+
+# Rubygems
+*.gem
+
+# RVM
+.ruby-version
+.ruby-gemset
+
+# dummy app
+spec/dummy
