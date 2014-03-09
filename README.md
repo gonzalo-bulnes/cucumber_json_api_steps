@@ -76,6 +76,25 @@ Releases are commented to provide a brief [changelog][changelog].
 
   [changelog]: https://github.com/gonzalo-bulnes/cucumber_json_api_steps/releases
 
+Development
+-----------
+
+### Testing
+
+This gem development is test-driven. Each use case should be described with [Cucumber][cucumber] within an example app. That app will be created and configured automatically by [Aruba][aruba] as a [Cucumber][cucumber] (gem-level) feature.
+
+Cucumber generates the example (dummy) app, with its own Cucumber features inside. That might sound a bit scary but isn't that much.
+The [Simple Token Authentication][sta] gem features a similar setup involving Cucumber and Aruba at the gem level, and RSpec (instead of Cucumber) inside the dummy app. It may make the pattern more visible.
+
+Anyway, the resulting Cucumber features are a bit verbose, and their output when errors occur is not ideal, but their output when they are passing, on the contrary, provides an easy-to-reproduce recipe to build the example app (see [Executable documentation][exec-doc]). I find that useful enough to be patient with red scenarii.
+
+  [aruba]: https://github.com/cucumber/aruba
+  [cucumber]: https://github.com/cucumber/cucumber-rails
+  [exec-doc]: https://github.com/gonzalo-bulnes/cucumber_json_api_steps#executable-documentation
+  [sta]: https://github.com/gonzalo-bulnes/simple_token_authentication
+
+You can run the full test suite with `cd cucumber_json_api_steps && rake`.
+
 Credits
 -------
 
