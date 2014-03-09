@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/gonzalo-bulnes/dummier.git
+  revision: e6fa0512a50a19e82a186e646744f40cf0e6cd97
+  branch: spike-cucumber-json-api-steps
+  specs:
+    dummier (0.3.2)
+      rails (>= 3)
+
 PATH
   remote: .
   specs:
@@ -129,5 +137,6 @@ DEPENDENCIES
   cucumber-rails
   cucumber_json_api_steps!
   database_cleaner
+  dummier!
   factory_girl_rails
   sqlite3

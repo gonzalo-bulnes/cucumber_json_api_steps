@@ -12,3 +12,7 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'dummier', git: 'https://github.com/gonzalo-bulnes/dummier.git', branch: 'spike-cucumber-json-api-steps'
+end
